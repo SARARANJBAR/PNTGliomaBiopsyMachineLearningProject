@@ -9,7 +9,7 @@ We deconvolved 128 biopsies with bulk RNAseq into relative abundance of subpopul
 
 Functions to perform feature selection and sampling exist in the classification notebook. 
 
-###regression
+### regression
 Targets for regression can be scores for A, B, C state or the relative abbundance of glMes, glPro, or glPN. Since the number of features is not a lot,  feature selection was skipped. 
 
 Modeling approach includes training regression models (direct multioutput regression, wrapper multioutput regression, and chain regression) to simultaneously predict 2+ numerical outputs (different cell populations in this case) represented with their abundance measured using RNASeq.
