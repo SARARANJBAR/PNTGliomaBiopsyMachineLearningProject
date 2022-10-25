@@ -10,21 +10,21 @@ We deconvolved 128 biopsies with bulk RNAseq into relative abundance of subpopul
 
 Unpublished work
 
-### regression experiments
+### Regression experiments
 Targets for regression can be scores for A, B, C state or the relative abbundance of glMes, glPro, or glPN. Since the number of features is not a lot,  feature selection was skipped. 
 
 Modeling approach includes training regression models (direct multioutput regression, wrapper multioutput regression, and chain regression) to simultaneously predict 2+ numerical outputs (different cell populations in this case) represented with their abundance measured using RNASeq.
 
 a model trained on the entire data was saved for creating a map of targets on independent data
 
-### classification experiments
+### Classification experiments
 
 classification targets are states A, B, or C, defined as the state with maximum score. Since the number of features is not a lot,  feature selection was skipped. 
 
 The analysis was done in both sex-specific manner (separate models for males or females) as well as for the combined cohorts. Under and over sampling strategies were used to ensure equal representation of groups during model training. Functions for feature selection and sampling are also provided here. 
 
 
-### creating a map
+### Creating a map
 the regression model trained on the entire labeled data was used to create a map of targets on an independent test case.
  
 ## Requirements
