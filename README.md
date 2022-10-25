@@ -6,8 +6,9 @@ The python scripts here were written as part of preliminary work for a recent PN
 
 We deconvolved 128 biopsies with bulk RNAseq into relative abundance of subpopulations. We wanted to predict the relative abundance of different cell populations. Input imaging features include quantitative MRI images (rCBV, FA, MD, EPI, and T2 Mapping) from biopsy locations and Enhancing column that shows if the biopsy was extracted from enhancing tumor.
 
+## Reference
 
-Functions to perform feature selection and sampling exist in the classification notebook. 
+Unpublished work
 
 ### regression experiments
 Targets for regression can be scores for A, B, C state or the relative abbundance of glMes, glPro, or glPN. Since the number of features is not a lot,  feature selection was skipped. 
@@ -20,7 +21,8 @@ a model trained on the entire data was saved for creating a map of targets on in
 
 classification targets are states A, B, or C, defined as the state with maximum score. Since the number of features is not a lot,  feature selection was skipped. 
 
-The analysis was done in both sex-specific manner (separate models for males or females) as well as for the combined cohorts. Under and over sampling strategies were used to ensure equal representation of groups during model training.
+The analysis was done in both sex-specific manner (separate models for males or females) as well as for the combined cohorts. Under and over sampling strategies were used to ensure equal representation of groups during model training. Functions for feature selection and sampling are also provided here. 
+
 
 ### creating a map
 the regression model trained on the entire labeled data was used to create a map of targets on an independent test case.
